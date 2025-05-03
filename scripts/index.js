@@ -1,48 +1,45 @@
-// APPLICATION ENTRY POINT
+function fetchQuote() {}
 
-/* Constructs webpage main components
- *
- * Webpage layout from top to bottom:
- * 1. header
- * 2. search box
- * 3. content – movie results, dependent on search
- * 4. footer
- */
+function fetchImage() {
+  // Make an AJAX call to Unsplash API's random photo endpoint
+  $("<div />").load(
+    "https://api.unsplash.com/photos/random?client_id=lrVhFg8r0-qGbnC7vCqD_gZE9nG1NAxJG3R42nfk23E",
+    function (responseTxt, statusTxt, xhr) {
+      if (statusTxt == "error") {
+        // Log error in console
+        console.log(xhr.status + " " + xhr.statusText);
+      }
+      if (statusTxt == "success") {
+        // Set the image URL and image description in variables
+        const imgURL = JSON.parse(responseTxt).urls.full;
+        const imgDesc = JSON.parse(responseTxt).description;
+
+        // Form an image element with fetched data
+        $img = $(`<img src="${imgURL}" alt="${imgDesc}" height="600" />`);
+
+        // Append the image element to the webpage body
+        $("body").append($img);
+      }
+    }
+  );
+
+  // Go fetch a quote
+  fetchQuote();
+}
+
+function handleClick() {
+  fetchImage();
+}
+
 function main() {
-  // Create main components
-  const header = document.createElement("div");
-  const searchBox = document.createElement("div");
-  const content = document.createElement("div");
-  content.id = "content";
-  const footer = document.createElement("div");
-
-  console.log($("#content"));
-
-  // Set hard-codable HTML to main components
-  header.innerHTML = `<h1 id="header">Movioso with jQuery</h1>`;
-  searchBox.innerHTML = `
-    <div class="search-box">
-      <div class="search-row">
-        <input
-          type="text"
-          id="input-box"
-          placeholder="Etsi elokuvateatteria..."
-          autocomplete="off"
-        />
-        <button onclick="handleClick(document.getElementById('input-box').value)">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
-      <div class="result-box"></div>
-    </div>
-  `;
-  footer.innerHTML = `<h4 id="footer">ⓒ 2025 Joni Mäkinen</h4>`;
-
-  // Append all main component to webpage
-  document.body.append(header);
-  document.body.append(searchBox);
-  document.body.append(content);
-  document.body.append(footer);
+  // Create Try button
+  $btn = $("<button>Try</button>"); // Is it better to 'const btn = $("<button>Try</button>")'?
+  // Set Try button some style
+  $btn.css("margin-left", 100);
+  // Add a click listener to Try button
+  $btn.on("click", handleClick); // Also 'btn.click(handleClick)' works
+  // Append Try button to the body
+  $("body").append($btn);
 }
 
 main();
