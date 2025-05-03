@@ -25,13 +25,13 @@ Access the video demonstration on [Youtube]()
 - Also other specific information, like production years and genres, are shown for every movie
 - Utilizes AJAX technique in fetching XML data from Finnkino's API
 - Implemented using jQuery
-- Developed for the [Laurea](https://www.laurea.fi) UAS course Web-sovellusten kehittäminen Javascriptillä TO00BL10-3025
+- Developed for the [Laurea UAS](https://www.laurea.fi) course Web-sovellusten kehittäminen Javascriptillä TO00BL10-3025
 
 ## Screenshots
 
-![](screenshots/ss01.png?raw=true)
-![](screenshots/ss02.png?raw=true)
-![](screenshots/ss03.png?raw=true)
+![](screenshots/.png?raw=true)
+![](screenshots/.png?raw=true)
+![](screenshots/.png?raw=true)
 
 ## Technologies
 
@@ -46,17 +46,17 @@ I've developed this application with:
 
 Go to
 
-- https://movioso.netlify.app (preferably Safari or Chrome) or
+<!-- - https://movioso-with-jquery.netlify.app (preferably Safari or Chrome) or -->
 
-- Clone repo with `git clone https://github.com/jonidaniel/movioso` and open `movioso/index.html` in your browser (preferably Safari or Chrome)
+- Clone repo with `git clone https://github.com/jonidaniel/movioso-with-jquery` and open `/index.html` in your browser (preferably Safari or Chrome)
 
 ## Status
 
-- Movioso with jQuery version 1.0.0 is now operational on Netlify
+- Movioso with jQuery version 1.0.0 is now in development and not yet operational
 
 ## Credits
 
-- Movioso with jQuery was developed in co-operation with [Laurea UAS](https://www.laurea.fi)
+<!-- - Movioso with jQuery was developed in co-operation with [Laurea UAS](https://www.laurea.fi) -->
 
 ## License
 
