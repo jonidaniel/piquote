@@ -16,6 +16,8 @@ function main() {
   content.id = "content";
   const footer = document.createElement("div");
 
+  console.log($("#content"));
+
   // Set hard-codable HTML to main components
   header.innerHTML = `<h1 id="header">Movioso with jQuery</h1>`;
   searchBox.innerHTML = `
