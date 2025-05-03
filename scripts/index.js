@@ -16,6 +16,8 @@ function fetchImage() {
 
         // Form an image element with fetched data
         $img = $(`<img src="${imgURL}" alt="${imgDesc}" height="600" />`);
+        // Set the image element some styles
+        $img.css({ display: "block", margin: "auto" });
 
         // Append the image element to the webpage body
         $("body").append($img);
@@ -32,13 +34,17 @@ function handleClick() {
 }
 
 function main() {
-  // Create Try button
-  $btn = $("<button>Try</button>"); // Is it better to 'const btn = $("<button>Try</button>")'?
-  // Set Try button some style
-  $btn.css("margin-left", 100);
-  // Add a click listener to Try button
+  // Set the webpage body styling
+  $("body").css("text-align", "center");
+
+  // Create a try button
+  $btn = $("<button>Try</button>"); // Is it better to write 'const btn = $("<button>Try</button>")'?
+  // Set the try button styling
+  $btn.css("display", "inline-block");
+  // Add a click listener to the try button
   $btn.on("click", handleClick); // Also 'btn.click(handleClick)' works
-  // Append Try button to the body
+
+  // Append the try button to the webpage body
   $("body").append($btn);
 }
 
