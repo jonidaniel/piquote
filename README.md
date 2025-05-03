@@ -1,4 +1,4 @@
-# Movioso with jQuery
+# Piquote
 
 Date: Spring 2025\
 Organization: Laurea UAS\
@@ -10,7 +10,7 @@ Access the video demonstration on [Youtube]()
 
 ## Table of Contents:
 
-- [About Movioso with jQuery](#about-movioso-with-jquery)
+- [About Piquote](#about-piquote)
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Setup](#setup)
@@ -18,13 +18,11 @@ Access the video demonstration on [Youtube]()
 - [Credits](#credits)
 - [License](#license)
 
-## About Movioso with jQuery
+## About Piquote
 
-- The app displays information on Finnkino's shows
-- First, users search for the desired theatre, then the app lists all movies and their show times for that theatre for the present day
-- Also other specific information, like production years and genres, are shown for every movie
-- Utilizes AJAX technique in fetching XML data from Finnkino's API
-- Implemented using jQuery
+- Users see random images with relevant quotes by pressing a button
+- Utilizes AJAX technique in fetching data from two different API's
+- Implemented using jQuery statements in particular
 - Developed for the [Laurea UAS](https://www.laurea.fi) course Web-sovellusten kehittäminen Javascriptillä TO00BL10-3025
 
 ## Screenshots
@@ -41,22 +39,23 @@ I've developed this application with:
 - `CSS`
 - `JavaScript`
 - `jQuery`
+- `Bootstrap`
 
 ## Setup
 
 Go to
 
-<!-- - https://movioso-with-jquery.netlify.app (preferably Safari or Chrome) or -->
+<!-- - https://piquote.netlify.app (preferably Safari or Chrome) or -->
 
-- Clone repo with `git clone https://github.com/jonidaniel/movioso-with-jquery` and open `/index.html` in your browser (preferably Safari or Chrome)
+- Clone repo with `git clone https://github.com/jonidaniel/piquote` and open `/index.html` in your browser (preferably Safari or Chrome)
 
 ## Status
 
-- Movioso with jQuery version 1.0.0 is now in development and not yet operational
+- Piquote version 1.0.0 is now in development and not yet operational
 
 ## Credits
 
-<!-- - Movioso with jQuery was developed in co-operation with [Laurea UAS](https://www.laurea.fi) -->
+<!-- - Piquote was developed in co-operation with [Laurea UAS](https://www.laurea.fi) -->
 
 ## License
 
