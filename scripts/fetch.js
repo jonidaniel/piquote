@@ -1,6 +1,3 @@
-let API_NINJAS_KEY;
-let UNSPLASH_KEY;
-
 /* Fetches a quote using jQuery AJAX
  *
  * Utilizes API Ninjas' Quotes API
@@ -16,7 +13,7 @@ async function fetchQuote() {
   await $.ajax({
     url: "https://api.api-ninjas.com/v1/quotes",
     method: "get",
-    headers: { "X-Api-Key": API_NINJAS_KEY },
+    headers: { "X-Api-Key": "REBH1bj+cY8AAOSYAQV9+Q==8CkjSeLCASHUYj6l" },
     success: (data) => {
       $quoteData = data; // You don't need the '$' sign here
     },
@@ -43,7 +40,7 @@ async function fetchImage() {
 
   // Make an AJAX call
   await $.ajax({
-    url: `https://api.unsplash.com/photos/random?client_id=${UNSPLASH_KEY}`,
+    url: "https://api.unsplash.com/photos/random?client_id=lrVhFg8r0-qGbnC7vCqD_gZE9nG1NAxJG3R42nfk23E",
     method: "get",
     success: (data) => {
       $imgData = data; // You don't need the '$' sign here
