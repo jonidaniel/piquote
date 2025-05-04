@@ -20,9 +20,9 @@ Access the video demonstration on [Youtube]()
 
 ## About Piquote
 
-- Users see random images with relevant quotes by pressing a button
+- Users see random images with random quotes by pressing a button
 - Utilizes AJAX technique in fetching data from two different API's
-- Implemented using jQuery statements in particular
+- Implemented using jQuery syntax in particular
 - Developed for the [Laurea UAS](https://www.laurea.fi) course Web-sovellusten kehittäminen Javascriptillä TO00BL10-3025
 
 ## Screenshots
@@ -45,7 +45,7 @@ I've developed this application with:
 
 Go to
 
-<!-- - https://piquote.netlify.app (preferably Safari or Chrome) or -->
+- https://piquote.netlify.app (preferably Safari or Chrome) or
 
 - Clone repo with `git clone https://github.com/jonidaniel/piquote` and open `/index.html` in your browser (preferably Safari or Chrome)
 
@@ -55,7 +55,7 @@ Go to
 
 ## Credits
 
-<!-- - Piquote was developed in co-operation with [Laurea UAS](https://www.laurea.fi) -->
+- Piquote was developed in co-operation with [Laurea UAS](https://www.laurea.fi)
 
 ## License
 
