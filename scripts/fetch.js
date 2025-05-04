@@ -1,3 +1,6 @@
+let API_NINJAS_KEY;
+let UNSPLASH_KEY;
+
 /* Fetches a quote using jQuery AJAX
  *
  * Utilizes API Ninjas' Quotes API
