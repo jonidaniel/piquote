@@ -6,10 +6,14 @@
  * Returns – none
  */
 function handleClick(e) {
+  // If previous image or quote elements exist, then slide them up
+  if ($("img").length) $("img").slideUp();
+  if ($("blockquote").length) $("blockquote").slideUp();
+
   // Display 'Loading' text on the try button while the image and quote are loading,
   // also make the button disabled
   e.target.innerText = "Loading";
-  e.target.disabled = "disabled";
+  e.target.disabled = true;
 
   // Fetch image data and quote data
   // $data is a promise
@@ -33,16 +37,16 @@ function handleClick(e) {
 
       // Set the image and blockquote elements' styles
       $img.css({ display: "block", margin: "auto" }); // Prettier extension removes the quotation marks around 'display' and 'margin'?
-      $quote.css({ "margin-left": 50, "margin-right": 50 });
+      $quote.css({ "margin-up": 20, "margin-left": 50, "margin-right": 50 });
 
       // Make the image and blockquote elements fade in slowly
-      $img.hide().fadeIn(2000, () => console.log("Image fade-in complete"));
-      $quote.hide().fadeIn(2000, () => console.log("Quote fade-in complete"));
+      $img.hide().fadeIn(4000);
+      $quote.hide().fadeIn(4000);
 
       // Change the try button text back to 'Try',
       // also make the button enabled again
       e.target.innerText = "Try";
-      e.target.disabled = "enabled";
+      e.target.disabled = false;
 
       // If a previous image element exists, then replace it with the new one...
       if ($("img").length) $("img").replaceWith($img);
