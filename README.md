@@ -45,7 +45,7 @@ I've developed this application with
 
 ## Setup
 
-- Go try the app on [Netlify](https://piquote.netlify.app) https://piquote.netlify.app
+- Go try the app on [Netlify](https://piquote.netlify.app) – https://piquote.netlify.app
 
   - Tested on [Apple Safari](https://www.apple.com/safari/) and [Google Chrome](https://www.google.com/chrome/)
 
