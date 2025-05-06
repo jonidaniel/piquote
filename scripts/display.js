@@ -68,6 +68,19 @@ function displayImageAndQuote($data, e) {
       else $("body").append($quote);
     })
     .catch((error) => {
+      // Log the error to console
       console.log(error);
+
+      // If exists, remove previous error information
+      if ($("p").length) $("p").remove();
+      // Display error information
+      $("body").append(
+        `<p>Something went wrong:</br>${error.status} error</p>`
+      );
+
+      // Change the try button text back to 'Try',
+      // also make the button enabled again
+      e.target.innerText = "Try";
+      e.target.disabled = false;
     });
 }

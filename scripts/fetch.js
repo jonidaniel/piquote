@@ -19,7 +19,9 @@ async function fetchImageAndQuoteData() {
     },
     error: (error) => {
       console.log(error.status + " error");
-      $imgData = error; // You don't need the '$' sign here
+      // Set $imgData as error,
+      // so that error is returned and finally handled in displayImageAndQuote function
+      $imgData = error; // You don't really need the '$' sign here
     },
   });
 
@@ -29,10 +31,12 @@ async function fetchImageAndQuoteData() {
     method: "get",
     headers: { "X-Api-Key": "REBH1bj+cY8AAOSYAQV9+Q==8CkjSeLCASHUYj6l" },
     success: (data) => {
-      $quoteData = data; // You don't need the '$' sign here
+      $quoteData = data; // You don't really need the '$' sign here
     },
     error: (error) => {
       console.log(error.status + " error");
+      // Set $quoteData as error,
+      // so that error is returned and finally handled in displayImageAndQuote function
       $quoteData = error; // You don't need the '$' sign here
     },
   });
