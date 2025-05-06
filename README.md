@@ -27,9 +27,9 @@ Access the video demonstration on [Youtube]()
 
 ## Screenshots
 
-![](screenshots/.png?raw=true)
-![](screenshots/.png?raw=true)
-![](screenshots/.png?raw=true)
+![](screenshots/fading-in.png?raw=true)
+![](screenshots/complete.png?raw=true)
+![](screenshots/sliding-up.png?raw=true)
 
 ## Technologies
 

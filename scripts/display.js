@@ -45,8 +45,8 @@ function displayImageAndQuote($data, e) {
       });
       $quote.css({
         "margin-up": 20,
-        "margin-left": 50,
-        "margin-right": 50,
+        "margin-left": 100,
+        "margin-right": 100,
       });
 
       // Make the image component and blockquote element fade in slowly
