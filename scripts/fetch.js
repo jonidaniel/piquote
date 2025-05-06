@@ -5,7 +5,7 @@
  * Params – none
  * Returns – { $imageData (Promise), $quoteData (Promise) }
  */
-async function fetchImageAndQuote() {
+async function fetchImageAndQuoteData() {
   // Introduce variables for image data and quote data
   // let imgData; // You don't need this line, why? Closure?
   // let quoteData; // You don't need this line, why? Closure?
