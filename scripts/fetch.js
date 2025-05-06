@@ -1,6 +1,6 @@
 /* Fetches an image and a quote using jQuery AJAX
  *
- * Utilizes Unsplash API's random photo endpoint and API Ninjas' Quotes API
+ * Utilizes Unsplash Image API's random photo endpoint and API Ninjas' Quotes API
  *
  * Params – none
  * Returns – { $imageData, $quoteData } (Promise)

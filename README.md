@@ -22,8 +22,8 @@ Access the video demonstration on [Youtube]()
 
 - Users see random images with random quotes by pressing a button
 - Utilizes AJAX technique in fetching data
-  - Images are fetched from Unsplash API
-  - Quotes are fetched from API Ninjas' Quotes API
+  - Images are fetched from [Unsplash Image API](https://unsplash.com/developers)
+  - Quotes are fetched from [API Ninjas' Quotes API](https://www.api-ninjas.com/api/quotes)
 - Implemented using jQuery syntax in particular
 - Developed for the [Laurea UAS](https://www.laurea.fi) course Web-sovellusten kehittäminen Javascriptillä TO00BL10-3025
 
@@ -37,11 +37,11 @@ Access the video demonstration on [Youtube]()
 
 I've developed this application with
 
-- `JavaScript`
-- `jQuery`
-- `HTML`
-- `CSS`
-- `Bootstrap`
+- JavaScript
+- [jQuery](https://jquery.com/)
+- HTML
+- CSS
+- [Bootstrap](https://getbootstrap.com/)
 
 ## Setup
 
