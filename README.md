@@ -25,7 +25,7 @@ Access the video demonstration on [Youtube]()
   - Images are fetched from [Unsplash Image API](https://unsplash.com/developers)
   - Quotes are fetched from [API Ninjas' Quotes API](https://www.api-ninjas.com/api/quotes)
 - Implemented using jQuery syntax in particular
-- Developed for the [Laurea UAS](https://www.laurea.fi) course Web-sovellusten kehittäminen Javascriptillä TO00BL10-3025
+- Developed for the Laurea UAS course Web-sovellusten kehittäminen Javascriptillä TO00BL10-3025
 
 ## Screenshots
 
@@ -45,7 +45,7 @@ I've developed this application with
 
 ## Setup
 
-- Go try the app on [Netlify](https://piquote.netlify.app)
+- Go try the app on [Netlify](https://piquote.netlify.app) https://piquote.netlify.app
 
   - Tested on [Apple Safari](https://www.apple.com/safari/) and [Google Chrome](https://www.google.com/chrome/)
 
@@ -56,7 +56,7 @@ I've developed this application with
 
 ## Status
 
-- Piquote version 1.0.0 is now fully operational
+- Piquote version 1.0.0 is now fully operational on [Netlify](https://piquote.netlify.app)
 
 ## Credits
 
