@@ -3,7 +3,7 @@
  * Utilizes Unsplash API's random photo endpoint and API Ninjas' Quotes API
  *
  * Params – none
- * Returns – { $imageData (Promise), $quoteData (Promise) }
+ * Returns – { $imageData, $quoteData } (Promise)
  */
 async function fetchImageAndQuoteData() {
   // Introduce variables for image data and quote data
@@ -15,7 +15,7 @@ async function fetchImageAndQuoteData() {
     url: "https://api.unsplash.com/photos/random?client_id=lrVhFg8r0-qGbnC7vCqD_gZE9nG1NAxJG3R42nfk23E",
     method: "get",
     success: (data) => {
-      $imgData = data; // You don't need the '$' sign here
+      $imgData = data; // You don't really need the '$' sign here
     },
     error: (error) => {
       console.log(error.status + " error");
@@ -37,7 +37,7 @@ async function fetchImageAndQuoteData() {
       console.log(error.status + " error");
       // Set $quoteData as error,
       // so that error is returned and finally handled in displayImageAndQuote function
-      $quoteData = error; // You don't need the '$' sign here
+      $quoteData = error; // You don't really need the '$' sign here
     },
   });
 

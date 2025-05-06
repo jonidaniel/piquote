@@ -1,6 +1,6 @@
 /* Initializes the webpage
  *
- * Sets style for the webpage, creates its header and creates the try button
+ * Creates the webpage header and the try button, also assigns the button a click listener
  *
  * Params – none
  * Returns – none
@@ -19,7 +19,7 @@ function main() {
   // Add a click listener to the try button
   $btn.on("click", (e) => handleClick(e));
 
-  // Append the page header and try button to the webpage body
+  // Append the header and try button to the webpage body
   $("body").append($header);
   $("body").append($btn);
 }

@@ -21,7 +21,9 @@ Access the video demonstration on [Youtube]()
 ## About Piquote
 
 - Users see random images with random quotes by pressing a button
-- Utilizes AJAX technique in fetching data from two different API's
+- Utilizes AJAX technique in fetching data
+  - Images are fetched from Unsplash API
+  - Quotes are fetched from API Ninjas' Quotes API
 - Implemented using jQuery syntax in particular
 - Developed for the [Laurea UAS](https://www.laurea.fi) course Web-sovellusten kehittäminen Javascriptillä TO00BL10-3025
 
@@ -33,19 +35,24 @@ Access the video demonstration on [Youtube]()
 
 ## Technologies
 
-I've developed this application with:
+I've developed this application with
 
-- `HTML`
-- `CSS`
 - `JavaScript`
 - `jQuery`
+- `HTML`
+- `CSS`
 - `Bootstrap`
 
 ## Setup
 
-- Go try the app on [Netlify](https://piquote.netlify.app) (tested on [Apple Safari](https://www.apple.com/safari/) and [Google Chrome](https://www.google.com/chrome/))
+- Go try the app on [Netlify](https://piquote.netlify.app)
 
-- Or continue where I left off by cloning the app repo with `git clone https://github.com/jonidaniel/piquote` and open `/index.html` in your browser (preferably Safari or Chrome)
+  - Tested on [Apple Safari](https://www.apple.com/safari/) and [Google Chrome](https://www.google.com/chrome/)
+
+- Or continue developing where I left off
+  - Clone the app repo with `git clone https://github.com/jonidaniel/piquote`
+  - Then open `/index.html` in your browser
+    - Tested on Safari and Chrome
 
 ## Status
 

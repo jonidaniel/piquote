@@ -1,6 +1,7 @@
-/* Displays the image and quote
+/* Displays the image and quote on the webpage
  *
- * asd
+ * Handles the resolved promise returned originally by the asynchronous fetchImageAndQuoteData function,
+ * also handles errors if the promise gets rejected
  *
  * Params – $data (Promise), e (Event)
  * Returns – none
@@ -12,22 +13,27 @@ function displayImageAndQuote($data, e) {
       // Set the image URL, description and dimensions into variables
       $URL = data.$imgData.urls.full;
       $desc = data.$imgData.alt_description;
-      $width = data.$imgData.width;
-      $height = data.$imgData.height;
+      $imgWidth = data.$imgData.width;
+      $imgHeight = data.$imgData.height;
       // Set the quote text and quote author into variables
       $text = data.$quoteData[0].quote;
       $author = data.$quoteData[0].author;
 
-      // Hardcode height and calculate width for the image's div container,
+      // Set height and calculate width for the image's div container,
       // which we'll create next
-      $newHeight = 400;
-      $newWidth = ($newHeight / $height) * $width;
+      $divHeight = 400;
+      $divWidth = ($divHeight / $imgHeight) * $imgWidth;
 
-      // Form an image component and a blockquote element with the fetched data
-      // It's not possible to assign a background image an alt attribute
-      // That's why we assign the image's container a title attribute here
-      // The title attribute handles usability and accessibility concerns
-      // (i.e. it substitutes the usual alt attribute used when dealing with img elements)
+      /* Form an image component and a blockquote element with the fetched data
+       * It's not possible to assign a background image an alt attribute
+       * That's why we assign the image's container a title attribute here
+       * The title attribute handles usability and accessibility concerns
+       * (i.e. it substitutes the usual alt attribute used when dealing with img elements)
+       *
+       * Why is the image component a div element and not an img element?
+       * Well, this was the only way I could make the image edge softening (with box-shadow and white inset) work
+       * The image is later set as the div element's background image
+       */
       $image = $(`<div id="img" title="${$desc}"></div>`);
       $quote = $(
         `<blockquote>${$text}<footer>${$author}</footer></blockquote>`
@@ -36,12 +42,14 @@ function displayImageAndQuote($data, e) {
       // Set the image component's and blockquote element's styles
       $image.css({
         // Prettier extension removes the quotation marks around some attributes?
-        margin: "auto",
         width: $newWidth,
         height: $newHeight,
+        // The image URL is set as the div element's background-image attribute
         "background-image": `url("${$URL}")`,
         "background-size": "cover",
+        // The image edge softening is implemented here
         "box-shadow": "0 0 8px 8px white inset",
+        margin: "auto",
       });
       $quote.css({
         "margin-up": 20,
@@ -68,11 +76,9 @@ function displayImageAndQuote($data, e) {
       else $("body").append($quote);
     })
     .catch((error) => {
-      // Log the error to console
-      console.log(error);
-
-      // If exists, remove previous error information
+      // If exists, remove previous error information from the page
       if ($("p").length) $("p").remove();
+
       // Display error information
       $("body").append(
         `<p>Something went wrong:</br>${error.status} error</p>`
