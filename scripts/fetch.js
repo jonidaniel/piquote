@@ -18,7 +18,6 @@ async function fetchImageAndQuoteData() {
       $imgData = data; // You don't really need the '$' sign here
     },
     error: (error) => {
-      console.log(error.status + " error");
       // Set $imgData as error,
       // so that error is returned and finally handled in displayImageAndQuote function
       $imgData = error; // You don't really need the '$' sign here
@@ -34,7 +33,6 @@ async function fetchImageAndQuoteData() {
       $quoteData = data; // You don't really need the '$' sign here
     },
     error: (error) => {
-      console.log(error.status + " error");
       // Set $quoteData as error,
       // so that error is returned and finally handled in displayImageAndQuote function
       $quoteData = error; // You don't really need the '$' sign here

@@ -42,8 +42,8 @@ function displayImageAndQuote($data, e) {
       // Set the image component's and blockquote element's styles
       $image.css({
         // Prettier extension removes the quotation marks around some attributes?
-        width: $newWidth,
-        height: $newHeight,
+        width: $divWidth,
+        height: $divHeight,
         // The image URL is set as the div element's background-image attribute
         "background-image": `url("${$URL}")`,
         "background-size": "cover",
@@ -76,10 +76,13 @@ function displayImageAndQuote($data, e) {
       else $("body").append($quote);
     })
     .catch((error) => {
+      // Log the error to console
+      console.log(error.status + " error");
+
       // If exists, remove previous error information from the page
       if ($("p").length) $("p").remove();
 
-      // Display error information
+      // Display error information on the page
       $("body").append(
         `<p>Something went wrong:</br>${error.status} error</p>`
       );
