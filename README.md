@@ -43,15 +43,13 @@ I've developed this application with:
 
 ## Setup
 
-Go to
+- Go try the app on [Netlify](https://piquote.netlify.app) (tested on [Apple Safari](https://www.apple.com/safari/) and [Google Chrome](https://www.google.com/chrome/))
 
-- https://piquote.netlify.app (preferably Safari or Chrome) or
-
-- Clone repo with `git clone https://github.com/jonidaniel/piquote` and open `/index.html` in your browser (preferably Safari or Chrome)
+- Or continue where I left off by cloning the app repo with `git clone https://github.com/jonidaniel/piquote` and open `/index.html` in your browser (preferably Safari or Chrome)
 
 ## Status
 
-- Piquote version 1.0.0 is now in development and not yet operational
+- Piquote version 1.0.0 is now fully operational
 
 ## Credits
 
